@@ -7,8 +7,8 @@ const ThemeToggle = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}><VscColorMode/></button>
+    <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}><VscColorMode className='dark:text-black'/></button>
   )
 }
 
-export default ThemeToggle
+export default ThemeToggle;
