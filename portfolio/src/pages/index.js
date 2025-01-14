@@ -10,14 +10,19 @@ function Home() {
   return (
     <div className="">
       <Header/>
-      <section className="text-center justify-items-center">
-        <h1 className="text-7xl mt-[14%]">Hi, I'm Baay Meissa</h1>
+      <section className="flex flex-row-reverse justify-between p-12 text-center items-center mt-[-20px]">
+      <Image src="/img.svg" width={500} height={200}/>
+      <div>
+        <h1 className="text-7xl mt-[8%]">Hi, I'm Baay Meissa</h1>
         <h1 className="text-4xl mt-6"><RotatingText words={words}/></h1>
+        <div className="flex justify-center">
         <Social/>
-        <div className="mt-[130px]">
-        <Button text="See more about me" icon={<FaArrowRightLong/>} href="about"/>
         </div>
+      </div>
       </section>
+      <div className="flex justify-center mt-[-30px]"> 
+      <Button text="See more about me" icon={<FaArrowRightLong/>} href="about"/>
+      </div>
     </div>
   );
 }
