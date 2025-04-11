@@ -6,9 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "netlify build"
   },
   "dependencies": {
+    "@netlify/next": "^1.4.9",
     "@tailwindcss/postcss": "^4.0.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
