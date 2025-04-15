@@ -9,7 +9,7 @@ const ThemeToggle = ({ sidebar }) => {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className={`dark:text-black ${sidebar ? 'flex' : 'hidden sm:flex'}`}
+      className={`w-28 dark:text-black ${sidebar ? 'flex' : 'hidden sm:flex'}`}
     >
       <VscColorMode />
     </button>

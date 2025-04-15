@@ -8,6 +8,7 @@ import Button from "@/components/button";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 
 function Home() {
   const words = ['Software Developper 💻', 'Python enthousiast 🐍', 'Web Designer 🎨']
@@ -43,6 +44,8 @@ function Home() {
       <Text text1="CONTACT"/>
       <Contact/>
         </div>
+
+        <Footer/>
     </div>
   );
 }
